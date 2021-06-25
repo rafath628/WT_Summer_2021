@@ -1,61 +1,62 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-<title> Employee </title>
-</head>
- <body>
-    <h1>Employee Registration Form</h1>
-    <form  action ="process.php" method="post" >
-        <table>
+<body>
 
-            <tr>
-                <td>Employee Name : </td>
-                <td><input type="text" id="Ename" name="Ename" ></td>
-            </tr> 
+<h1>Registration Form</h1>
+<hr>
 
-            <tr>
-                <td>Employee ID : </td>
-                <td><input type="text" id="Eid" name="Eid" ></td>
-            </tr> 
-
-            <tr>
-                <td>Email: </td>
-                <td><input type="text" id="email" name="email"></td>
-            </tr> 
-
-            <tr> 
-                <td> Date Of Birth </td>
-                </tr>
-                <tr>
-                <td><input type="date" id="date" name="date"></td>    
-            </tr>  
-
-            <tr> 
-                <td> Address : </td> 
-                <td><input type="text" id="Address" name="Address"> </td>
-            </tr>
-
-            <tr> 
-                <td> State : </td>  
-                <td><input type="text" id="State" name="State"> </td>
-            </tr>
-
-            <tr> 
-                <td> Country : </td>  
-                <td><input type="text" id="Country" name="Country"> </td>
-            </tr>
-
-            <tr> 
-                <td> Phone : </td>  
-                <td><input type="text" id="Phone" name="Phone"> </td>
-            </tr>
-        
-            <tr>
-            <td><input type="submit" value="Submit"></td>
-			</tr>
-       
-        </table>
-    </form>
-</body> 
-
+<form>
+<table>
+  <tr>
+    <td><label for="fname">Full Name:</label></td>
+    <td><input type="text" id="fname" name="fname"></td>
+  </tr>
+  <tr>
+    <td><label for="email">E-mail:</label></td>
+    <td><input type="text" id="email" name="email"></td>
+  </tr>
+  <tr>
+    <td><label for="pwd">Password:</label></td>
+    <td><input type="password" id="pwd" name="pwd" minlength="8"></td>
+  </tr>
+  <tr>
+    <td><label for="comment">Comment:</label></td>
+    <td><textarea rows="5" cols="40" name="comment" form="usrform"></textarea></td>
+  </tr>
+  <tr>
+    <td><label for="gender">Gender:</label></td>
+    <td>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Male</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+    </td>
+  </tr>
+  <tr>
+    <td><label for="hobby">Please choose a hobby</label></td>
+    <td>
+        <input type="checkbox" name="hobby1" value="Singing">
+        <label for="hobby1">Singing</label>
+        <input type="checkbox" name="hobby2" value="Dancing">
+        <label for="hobby2"> Dancing</label>
+        <input type="checkbox" name="hobby3" value="Reading">
+        <label for="hobby3">Reading</label>
+    </td>
+  </tr>
+  <tr>
+    <td><label for="myfile">Please choose a file</label></td>
+    <td><input type="file" id="myfile" name="myfile"></td>
+  </tr>
+</table>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
+</body>
 </html>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
